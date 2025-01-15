@@ -1,0 +1,115 @@
+/* styles.css */
+
+section img {
+    width: 320px;
+    height: 180px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d1117; /* Fons més profund */
+    color: #f0f6fc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #161b22; /* Fons més viu */
+    border-bottom: 2px solid #58a6ff;
+}
+
+header img {
+    width: 120px;
+}
+
+header nav a {
+    color: #f0f6fc;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #58a6ff; /* Blau viu */
+}
+
+.video-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.video-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #58a6ff; /* Blau viu */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: gradientText 3s infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.video-section video {
+    max-width: 90%;
+    border: 2px solid #ff7eb3; /* Rosa viu */
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1); /* Ombra en blau */
+}
+
+/* Responsive Styles */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #161b22; /* Mateix to del header */
+    color: #f0f6fc;
+}
