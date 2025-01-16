@@ -18,7 +18,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: #161b22; /* Fons més viu */
-    border-bottom: 2px solid #58a6ff;
+    border-bottom: 2px solid red;
 }
 
 header img {
@@ -34,7 +34,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #58a6ff; /* Blau viu */
+    color: red; /* Blau viu */
 }
 
 .video-section {
@@ -45,7 +45,7 @@ header nav a:hover {
 .video-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #58a6ff; /* Blau viu */
+    color: red; /* Blau viu */
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -63,7 +63,7 @@ header nav a:hover {
 
 .video-section video {
     max-width: 90%;
-    border: 2px solid #ff7eb3; /* Rosa viu */
+    border: 2px solid red; /* Rosa viu */
     border-radius: 8px;
 }
 
