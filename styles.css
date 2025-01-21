@@ -1,91 +1,86 @@
-/* styles.css */
-
-section img {
-    width: 320px;
-    height: 180px;
-}
-
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #0d1117; /* Fons més profund */
-    color: #f0f6fc;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #161b22; /* Fons més viu */
-    border-bottom: 2px solid red;
+    padding: 1rem 2rem;
+    background-color: #cc0000;
+    border-bottom: 4px solid #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 header img {
-    width: 120px;
+    width: 100px;
 }
 
 header nav a {
-    color: #f0f6fc;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 1rem;
-    font-weight: 500;
-    transition: color 0.3s;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+    text-transform: uppercase;
 }
 
 header nav a:hover {
-    color: red; /* Blau viu */
+    color: #ffcc00;
+    transform: scale(1.1);
 }
 
 .video-section {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(180deg, #cc0000, #1a1a1a);
+    border-bottom: 4px solid #ffcc00;
 }
 
 .video-section h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: red; /* Blau viu */
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    animation: gradientText 3s infinite;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes gradientText {
-    0% {
-        background-position: 0%;
-    }
-    100% {
-        background-position: 100%;
-    }
-}
-
-.video-section video {
+.video-section iframe {
     max-width: 90%;
-    border: 2px solid red; /* Rosa viu */
+    border: 2px solid red;
     border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(179, 0, 0, 0.6);
 }
 
 .gallery {
     display: grid;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 1.5rem;
+    padding: 3rem;
     margin: 0 auto;
+    background-color: #1a1a1a;
+    border-top: 4px solid #ffcc00;
+    border-bottom: 4px solid #cc0000;
 }
 
 .gallery img {
     width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffffff;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1); /* Ombra en blau */
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.8);
 }
 
-/* Responsive Styles */
 @media (min-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
@@ -103,13 +98,17 @@ header nav a:hover {
 @media (max-width: 767px) {
     .gallery {
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 90%;
     }
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #161b22; /* Mateix to del header */
-    color: #f0f6fc;
+    background-color: #cc0000;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-top: 4px solid #ffffff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.4);
 }
